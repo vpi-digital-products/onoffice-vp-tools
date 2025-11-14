@@ -1,0 +1,52 @@
+### PHPStorm ###
+# Project settings (避免提交你的个人 IDE 配置)
+.idea/
+
+# PHPStorm 的一些缓存文件
+*.iws
+*.iml
+*.ipr
+
+### Composer ###
+/vendor/
+/composer.lock
+
+### PHP ###
+# Composer PHAR
+composer.phar
+
+# PHP 单元测试的缓存
+.phpunit.result.cache
+
+### Logs ###
+/*.log
+/logs/
+/storage/logs/
+
+### Cache ###
+/cache/
+/tmp/
+/temp/
+
+### OS 系统文件 ###
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+### Node（如果你项目含前端） ###
+node_modules/
+npm-debug.log
+yarn-error.log
+dist/
+build/
+
+### Env 配置 ###
+.env
+.env.local
+.env.*
