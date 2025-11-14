@@ -1,52 +1,71 @@
-### PHPStorm ###
-# Project settings (避免提交你的个人 IDE 配置)
-.idea/
+### macOS system files ###
+# Prevent macOS-specific hidden files from being committed
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+Icon?
+ehthumbs.db
+Thumbs.db
 
-# PHPStorm 的一些缓存文件
+### PHPStorm / IntelliJ ###
+# JetBrains IDE project files and cache folders
+.idea/
 *.iws
 *.iml
 *.ipr
 
-### Composer ###
-/vendor/
-/composer.lock
+# Additional JetBrains cache folders
+**/.idea/**/workspace.xml
+**/.idea/**/tasks.xml
+**/.idea/**/dataSources/
+**/.idea/**/shelf/
 
-### PHP ###
-# Composer PHAR
+### Composer ###
+# Composer dependencies and lock file
+/vendor/
+composer.lock
+
+# Composer PHAR file
 composer.phar
 
-# PHP 单元测试的缓存
+### PHP ###
+# PHPUnit cache file
 .phpunit.result.cache
 
 ### Logs ###
-/*.log
-/logs/
-/storage/logs/
+# Log files and log directories
+logs/
+*.log
+storage/logs/
 
-### Cache ###
-/cache/
-/tmp/
-/temp/
+### Cache / Temporary files ###
+# Cache and temporary directories
+cache/
+tmp/
+temp/
+*.cache
 
-### OS 系统文件 ###
-# macOS
-.DS_Store
-.AppleDouble
-.LSOverride
+### Environment files ###
+# Environment configuration files (sensitive data)
+.env
+.env.local
+.env.*
+.env.*.local
 
-# Windows
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-
-### Node（如果你项目含前端） ###
+### Node.js (if frontend is included) ###
+# Node dependencies and build directories
 node_modules/
 npm-debug.log
 yarn-error.log
 dist/
 build/
 
-### Env 配置 ###
-.env
-.env.local
-.env.*
+### Other ###
+# Temporary, backup, and swap files
+*.swp
+*.bak
+*.tmp
